@@ -18,7 +18,9 @@ Technologies
 Features (MVP)
 
 1) ability to provide lyrics and/or audio when user clicks to shake the 8-ball
+
 2) ability to create custom 8-ball responses, David Bowie or not
+
 3) responsive design, looking towards roadmap items
 
 Roadmap
