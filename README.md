@@ -1,5 +1,6 @@
 # groce-final
-My Magic 8 Bowie
+# My Magic 8 Bowie
+
 Elevator
 
 Ask the Magic 8 Bowie your life's questions, "shake" it and get an answer back from the wisdom of David Bowie lyrics/music snippets. Users may have the option to add their own options and customize their own 8 ball, via voice recognition, custom data.
