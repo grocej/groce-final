@@ -11,11 +11,10 @@ Technologies
 
 -Voice recognition scripting
 
--Ionic
-
 -Server to store music/lyrics
 
- 
+-Ionic
+
 Features (MVP)
 
 1) ability to provide lyrics and/or audio when user clicks to shake the 8-ball
