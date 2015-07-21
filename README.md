@@ -8,8 +8,11 @@ Ask the Magic 8 Bowie your life's questions, "shake" it and get an answer back f
 Technologies
 
 -Angular
+
 -Voice recognition scripting
+
 -Ionic
+
 -Server to store music/lyrics
 
  
