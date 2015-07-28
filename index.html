@@ -10,11 +10,8 @@
   <section class="wrapper">
     <div class="title-bar">Magic <span class="eight">8</span> Bowie</div>
       <p class="subtitle">ask the Thin White Duke anything<br/ > and click below to see what he says</p>
-    <div class="shake freez shake-crazy"><button type="button" name="button" id="play"><img src="images/face.png" alt="" />
-      <ul>
-        <li> {{ lyrics }} </li>
-      </ul>
-    </button></div>
+    <div class="shake freez shake-crazy"><button type="button" ng-class="bowie-lyrics" ng-controller="songTextController" id="play">
+       <li> {{ lyrics }} </li><img src="images/face.png"/></button></div>
   </section>
 
   <ng-view></ng-view>

@@ -1,5 +1,9 @@
   function samplePlayer() {
 
+    angular
+      .module('bowieApp')
+      .controller('songTextController');
+
     blip.sampleLoader()
       .samples({
         'kook_01': 'sounds/kook_01.mp3',

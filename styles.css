@@ -13,6 +13,7 @@ html {
 #play {
   background: transparent;
   border: none;
+  position: relative;
 }
 button:active, .button:active, button:focus, .button:focus, button:hover, .button:hover{
     border:none !important;
@@ -39,7 +40,13 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
   font-family: Century Gothic;
   margin:0 auto;
   text-align: center;
-
+}
+li {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  list-style-type: none;
 }
 .eight {
   font-size: 2.5em;

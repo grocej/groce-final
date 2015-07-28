@@ -2,6 +2,8 @@
   'use strict';
   angular
     .module('bowieApp')
-    .factory('')
+    .factory('lyricService', function() {
+      
+    })
 
 }());

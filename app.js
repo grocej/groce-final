@@ -11,10 +11,10 @@
           templateUrl: 'main.html',
           controller: 'songTextController'
         })
-        .when('/add', {
-          templateUrl: 'add.html',
-          controller: 'addController'
-        })
+        // .when('/add', {
+        //   templateUrl: 'add.html',
+        //   controller: 'addController'
+        // })
         .when('/404', {
           template: '<h2>Bowie Is Not Pleased</h2>'
         })
