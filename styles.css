@@ -1,0 +1,106 @@
+html {
+  background-color: #510552;
+  font-family: Helvetica, Arial, sans-serif;
+}
+@font-face {
+    font-family: Belladona;
+    src: local(Belladona), url('fonts/Belladona.ttf') format('truetype');
+}
+@font-face {
+    font-family: Belladona;
+    src: local(Belladona), url('fonts/Belladona.otf') format('opentype');
+}
+#play {
+  background: transparent;
+  border: none;
+}
+button:active, .button:active, button:focus, .button:focus, button:hover, .button:hover{
+    border:none !important;
+    outline:none !important;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.title-bar {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  font-family: Belladona;
+  color: white;
+  font-size: 4.5em;
+  margin-top: 1em;
+}
+.subtitle {
+  font-size: .8em;
+  color: #bf3ab7;
+  font-style: italic;
+  font-family: Century Gothic;
+  margin:0 auto;
+  text-align: center;
+
+}
+.eight {
+  font-size: 2.5em;
+}
+.shake.shake-crazy {
+  margin: 0 auto;
+  outline: none;
+  border: transparent;
+  clear: both;
+}
+.shake.shake-crazy:hover {
+  -webkit-animation-name: shake-crazy;
+  -ms-animation-name: shake-crazy;
+  animation-name: shake-crazy;
+  -webkit-animation-duration: 100ms;
+  -ms-animation-duration: 100ms;
+  animation-duration: 100ms;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-play-state: running;
+  -ms-animation-play-state: running;
+  animation-play-state: running;
+}
+
+
+@-webkit-keyframes shake-crazy { 0% { -webkit-transform: translate(0px, 0px) rotate(0deg); opacity: 0.9; }
+  10% { -webkit-transform: translate(-5px, -5px) rotate(-10deg); opacity: 0.3; }
+  20% { -webkit-transform: translate(18px, -17px) rotate(-5deg); opacity: 0; }
+  30% { -webkit-transform: translate(-15px, 2px) rotate(-3deg); opacity: 0.8; }
+  40% { -webkit-transform: translate(-9px, -4px) rotate(3deg); opacity: 0.6; }
+  50% { -webkit-transform: translate(17px, -7px) rotate(-5deg); opacity: 0.6; }
+  60% { -webkit-transform: translate(-20px, 10px) rotate(-3deg); opacity: 0.6; }
+  70% { -webkit-transform: translate(-18px, -4px) rotate(-1deg); opacity: 0.3; }
+  80% { -webkit-transform: translate(12px, 13px) rotate(6deg); opacity: 0.3; }
+  90% { -webkit-transform: translate(14px, 0px) rotate(8deg); opacity: 0.4; } }
+
+@-ms-keyframes shake-crazy { 0% { -ms-transform: translate(0px, 0px) rotate(0deg); opacity: 0.8; }
+  10% { -ms-transform: translate(-15px, 0px) rotate(-10deg); opacity: 0.4; }
+  20% { -ms-transform: translate(-3px, 13px) rotate(7deg); opacity: 0; }
+  30% { -ms-transform: translate(8px, 4px) rotate(6deg); opacity: 0; }
+  40% { -ms-transform: translate(9px, -17px) rotate(0deg); opacity: 0.5; }
+  50% { -ms-transform: translate(6px, 1px) rotate(-4deg); opacity: 0.6; }
+  60% { -ms-transform: translate(-1px, 7px) rotate(-9deg); opacity: 0.1; }
+  70% { -ms-transform: translate(-6px, 6px) rotate(-6deg); opacity: 0; }
+  80% { -ms-transform: translate(-11px, -2px) rotate(-1deg); opacity: 0.8; }
+  90% { -ms-transform: translate(-5px, 10px) rotate(4deg); opacity: 0.5; } }
+
+@keyframes shake-crazy { 0% { transform: translate(0px, 0px) rotate(0deg); opacity: 0.6; }
+  10% { transform: translate(18px, 9px) rotate(3deg); opacity: 0.3; }
+  20% { transform: translate(-15px, -19px) rotate(0deg); opacity: 0.8; }
+  30% { transform: translate(-5px, -2px) rotate(-4deg); opacity: 0.9; }
+  40% { transform: translate(-19px, -18px) rotate(-2deg); opacity: 0.1; }
+  50% { transform: translate(11px, 8px) rotate(4deg); opacity: 0; }
+  60% { transform: translate(9px, 0px) rotate(-4deg); opacity: 0.6; }
+  70% { transform: translate(-13px, 6px) rotate(-1deg); opacity: 0.8; }
+  80% { transform: translate(12px, 17px) rotate(3deg); opacity: 0.9; }
+  90% { transform: translate(11px, 13px) rotate(7deg); opacity: 0.1; } }

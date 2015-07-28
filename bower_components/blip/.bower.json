@@ -1,0 +1,39 @@
+{
+  "name": "blip",
+  "main": "blip.js",
+  "version": "0.3.0",
+  "homepage": "https://github.com/jshanley/blip",
+  "authors": [
+    "John Shanley <john.michael.shanley@gmail.com>"
+  ],
+  "description": "Sweet, sugary goodness for looping and sampling with the Web Audio API",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "audio",
+    "webaudio"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "wav",
+    "karma.conf.js",
+    "Gruntfile.js"
+  ],
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.0",
+    "commit": "a95c4983ddca57c05ad5be028cc1f9a94e6ac8a6"
+  },
+  "_source": "git://github.com/jshanley/blip.git",
+  "_target": "~0.3.0",
+  "_originalSource": "blip",
+  "_direct": true
+}
