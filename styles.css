@@ -16,10 +16,6 @@ body {
     font-family: Belladona;
     src: local(Belladona), url('fonts/Belladona.otf') format('opentype');
 }
-
-.lyric-container {
-  shape-inside: polygon();
-}
 /*.bannerContain {
     width: 80%;
     overflow: hidden;
@@ -44,8 +40,35 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
     color: white;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
     list-style-type: none;
+    position: relative;
+}
+/*TRAPEZOID CUSTOM SHAPE*/
+.trapezoid-container {
+   display: block;
+   padding-bottom: 20px;
+   margin-left: 3px;
+   margin-top: -25px;
+   position: absolute;
+   /*flex-direction: row;
+   flex-wrap: nowrap;*/
+   /*background-image: url('images/triangle.png');*/
+   height: 331px;
+   width: 331px;
+
+ }
+.lyric-container {
+    /*position: absolute;*/
+    text-align: center;
+    font-size: .75em;
+    padding-top: 155px;
+    padding-left: 35px;
+    padding-right: 35px;
+    -webkit-shape-inside: url('images/face-v2mask.png');
+            shape-inside: url('images/face-v2mask.png');
+    -webkit-shape-margin: 6px;
+    height: 125px;
     position: absolute;
 }
 .wrapper {
@@ -70,14 +93,6 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
   margin:0 auto;
   text-align: center;
 }
-/*li {
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  list-style-type: none;
-  position: relative;
-}*/
 .eight {
   font-size: 2.5em;
 }
@@ -86,6 +101,8 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
   outline: none;
   border: transparent;
   clear: both;
+  display: flex;
+  flex-direction: row;
 }
 .shake.shake-crazy:hover {
   -webkit-animation-name: shake-crazy;

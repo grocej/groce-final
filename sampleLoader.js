@@ -4,6 +4,7 @@
   //   angular
   //     .module('bowieApp')
   //     .controller('songTextController');
+// function bowieSong() {
 
     blip.sampleLoader()
       .samples({
@@ -124,7 +125,7 @@
         },
         moon_03: {
           song: myBowie11,
-          lyric: "You're squawking like a pink monkey bird"
+          lyric: "You're squawking like a pink monkey bird!"
         },
         quick_01: {
           song: myBowie12,
@@ -218,14 +219,6 @@
         var songsArr = Object.keys(bowieList1);
         bowieList1[songsArr[randomBowie]].song.play();
         console.log(bowieList1[songsArr[randomBowie]].lyric);
-        // function randomBowieSong() {
-        //   return bowieList1[songsArr[randomBowie]];
-        // }
-        //
-        // return {
-        //   randomBowieSong: randomBowieSong
-        // }
-        // console.log("ENTIRE CHUNK", bowieList1[songsArr[randomBowie]]);
 
         // also show corresponding lyrics
             // & stops the CSS shake
@@ -235,6 +228,5 @@
       });
 
     }
-
-
+// }
   // }());
