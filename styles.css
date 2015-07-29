@@ -1,6 +1,11 @@
-html {
+body {
   background-color: #510552;
   font-family: Helvetica, Arial, sans-serif;
+  background-image: url(images/bigbkgrdbowie3.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
 }
 @font-face {
     font-family: Belladona;
@@ -10,6 +15,19 @@ html {
     font-family: Belladona;
     src: local(Belladona), url('fonts/Belladona.otf') format('opentype');
 }
+/*.bannerContain {
+    width: 80%;
+    overflow: hidden;
+    margin: 50px auto;
+    background: #510552;
+}
+.banner {
+    height: 1000px;
+    width: 1050px;
+    margin-bottom: 80px;
+    padding: 0;
+
+}*/
 #play {
   background: transparent;
   border: none;
@@ -18,6 +36,12 @@ html {
 button:active, .button:active, button:focus, .button:focus, button:hover, .button:hover{
     border:none !important;
     outline:none !important;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    list-style-type: none;
+    position: relative;
 }
 .wrapper {
   display: flex;
@@ -41,13 +65,14 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
   margin:0 auto;
   text-align: center;
 }
-li {
+/*li {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 2em;
   list-style-type: none;
-}
+  position: relative;
+}*/
 .eight {
   font-size: 2.5em;
 }
@@ -111,3 +136,134 @@ li {
   70% { transform: translate(-13px, 6px) rotate(-1deg); opacity: 0.8; }
   80% { transform: translate(12px, 17px) rotate(3deg); opacity: 0.9; }
   90% { transform: translate(11px, 13px) rotate(7deg); opacity: 0.1; } }
+
+  /*Banner Animation*/
+
+/*.first {
+    -webkit-animation: bannermove 27s linear infinite;
+       -moz-animation: bannermove 27s linear infinite;
+        -ms-animation: bannermove 27s linear infinite;
+         -o-animation: bannermove 27s linear infinite;
+            animation: bannermove 27s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+/*@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}*/
+
+
+/*.banner img {
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+}
+
+.banner img:hover {
+   -webkit-transform: scale(1.3);
+   -moz-transform: scale(1.3);
+   -o-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+   cursor: pointer;
+
+   -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+   -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+   box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}*/

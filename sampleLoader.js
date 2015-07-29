@@ -1,89 +1,43 @@
-  function samplePlayer() {
-
-    angular
-      .module('bowieApp')
-      .controller('songTextController');
+  // (function() {
+  //   'use strict';
+  //
+  //   angular
+  //     .module('bowieApp')
+  //     .controller('songTextController');
 
     blip.sampleLoader()
       .samples({
         'kook_01': 'sounds/kook_01.mp3',
-
         'andy_01': 'sounds/andy_01.mp3',
-
         'bitch_01': 'sounds/bitch_01.mp3',
-        //'print_bitch_01': 'Why didn\'t I say, no, no, no',
         'bitch_02': 'sounds/bitch_02.mp3',
-
         'pretty_01': 'sounds/pretty_01.mp3',
-        //'print_pretty_01': 'Wake up ya sleepyhead, pull on your clothes shake off your bed',
-
         'pretty_02': 'sounds/pretty_02.mp3',
-        //'print_pretty_02': 'No room for me, no fun for you',
-
         'pretty_03': 'sounds/pretty_03.mp3',
-        //'print_pretty_03': '',
-
         'changes_01': 'sounds/changes_01.mp3',
-        //'print_changes_01': '',
-
         'moon_01': 'sounds/moon_01.mp3',
-        //'print_quick_01': 'Don\'t fake it baby, lay the real thing on me',
-
         'moon_02': 'sounds/moon_02.mp3',
-        //'print_moon_02': 'Freak out in a moonage daydream, oh yeah',
-
         'moon_03': 'sounds/moon_03.mp3',
-        //'print_moon_03': 'Don\'t believe in yourself',
-
         'quick_01': 'sounds/quick_01.mp3',
-        //'print_quick_01': 'I\'m not a prophet or a stone age man',
-
         'quick_02': 'sounds/quick_02.mp3',
-        //'print_quick_02': 'Just a mortal with potential of a superman',
-
         'quick_03': 'sounds/quick_03.mp3',
-
         'mansold_01': 'sounds/mansold_01.mp3',
-
         'ziggy_01': 'sounds/ziggy_01.mp3',
-
         'rebel_01': 'sounds/rebel_01.mp3',
-
         'golden_01': 'sounds/golden_01.mp3',
-
         'fill_01': 'sounds/fill_01.mp3',
-
         'young_01': 'sounds/young_01.mp3',
-
         'oddity_01': 'sounds/oddity_01.mp3',
-        //'print_oddity_01': 'Now it\'s time to leave the capsule if you dare',
-
         'oddity_02': 'sounds/oddity_02.mp3',
-        //'print_oddity_02': 'Planet Earth is blue and there\'s nothing I can do',
-
         'fashion_01': 'sounds/fashion_01.mp3',
-
         'suffra_01': 'sounds/suffra_01.mp3',
-
         'suffra_02': 'sounds/suffra_02.mp3',
-
         'ashes_01': 'sounds/ashes_01.mp3',
-        'print_ashes_01': 'My mama said to get things done',
-
         'kook_02': 'sounds/kook_02.mp3',
-
         'china_01': 'sounds/china_01.mp3',
-        //'print_china_01': 'You shouldn\'t mess with me',
-
         'china_02': 'sounds/china_02.mp3',
-        //'print_china_02': 'Oh baby, just you shut your mouth',
-
         'china_03': 'sounds/china_03.mp3',
-        //'print_china_03': 'She says, ssssshhhhhh...',
-
         'heroes_01': 'sounds/heroes_01.mp3',
-        //'print_heroes_01': 'I wish you could swim',
-
         'heroes_02': 'sounds/heroes_02.mp3'
         })
       .done(callback)
@@ -125,13 +79,161 @@
       var myBowie31 = blip.clip().sample('heroes_01');
       var myBowie32 = blip.clip().sample('heroes_02');
 
-      var bowieList = [myBowie1,myBowie2,myBowie3,myBowie4,myBowie5,myBowie6,myBowie7,myBowie8,myBowie9,myBowie10,myBowie11,myBowie12,myBowie13,myBowie14,myBowie15,myBowie16,myBowie17,myBowie18,myBowie19,myBowie20,myBowie21,myBowie21,myBowie22,myBowie23,myBowie24,myBowie25,myBowie26,myBowie27,myBowie28,myBowie29,myBowie30,myBowie31,myBowie32]
+      //var bowieList = [myBowie1,myBowie2,myBowie3,myBowie4,myBowie5,myBowie6,myBowie7,myBowie8,myBowie9,myBowie10,myBowie11,myBowie12,myBowie13,myBowie14,myBowie15,myBowie16,myBowie17,myBowie18,myBowie19,myBowie20,myBowie21,myBowie21,myBowie22,myBowie23,myBowie24,myBowie25,myBowie26,myBowie27,myBowie28,myBowie29,myBowie30,myBowie31,myBowie32]
 
+      var bowieList1 = {
+        kook_01: {
+          song: myBowie1,
+          lyric: "If you stay, you won't be sorry"
+        },
+        andy_01: {
+          song: myBowie2,
+          lyric: "What a jolly boring thing to do"
+        },
+        bitch_01: {
+          song: myBowie3,
+          lyric: "Oh God, I could do better than that"
+        },
+        bitch_02: {
+          song: myBowie4,
+          lyric: "Why didn't I say, No, No, No?"
+        },
+        pretty_01: {
+          song: myBowie5,
+          lyric: "Don't you know you're driving your mamas and papas insane?"
+        },
+        pretty_02: {
+          song: myBowie6,
+          lyric: "Wake up you sleepy head put on some clothes, shake up your bed"
+        },
+        pretty_03: {
+          song: myBowie7,
+          lyric: "No room for me, no fun for you"
+        },
+        changes_01: {
+          song: myBowie8,
+          lyric: "Ch-ch-ch-ch-changes"
+        },
+        moon_01: {
+          song: myBowie9,
+          lyric: "Freak out in a moonage daydream, oh yeah"
+        },
+        moon_02: {
+          song: myBowie10,
+          lyric: "Don't fake it baby, lay the real thing on me"
+        },
+        moon_03: {
+          song: myBowie11,
+          lyric: "You're squawking like a pink monkey bird"
+        },
+        quick_01: {
+          song: myBowie12,
+          lyric: "Don't believe in yourself"
+        },
+        quick_02: {
+          song: myBowie13,
+          lyric: "I'm not a prophet or a stone age man"
+        },
+        quick_03: {
+          song: myBowie14,
+          lyric: "Just a mortal with potential of a Superman"
+        },
+        mansold_01: {
+          song: myBowie15,
+          lyric: "Who knows? Not me"
+        },
+        ziggy_01: {
+          song: myBowie16,
+          lyric: "I had to break up the band"
+        },
+        rebel_01: {
+          song: myBowie17,
+          lyric: "Hot tramp, I love you so"
+        },
+        golden_01: {
+          song: myBowie18,
+          lyric: "Nothing's gonna touch you in these Golden Years"
+        },
+        fill_01: {
+          song: myBowie19,
+          lyric: "Just remember lovers never lose"
+        },
+        young_01: {
+          song: myBowie20,
+          lyric: "Allllllllllllllllllll night"
+        },
+        oddity_01: {
+          song: myBowie21,
+          lyric: "Now it's time to leave the capsule if you dare"
+        },
+        oddity_02: {
+          song: myBowie22,
+          lyric: "Planet Earth is blue, and there's nothing I can do"
+        },
+        fashion_01: {
+          song: myBowie23,
+          lyric: "Beep Beep"
+        },
+        suffra_01: {
+          song: myBowie24,
+          lyric: "Ohhhh wham, bam, thank ya ma'am!"
+        },
+        suffra_02: {
+          song: myBowie25,
+          lyric: "Aww, leave me alone, you know..."
+        },
+        ashes_01: {
+          song: myBowie26,
+          lyric: "My mama said to get things done"
+        },
+        kook_02: {
+          song: myBowie27,
+          lyric: "Cuz we believe in you"
+        },
+        china_01: {
+          song: myBowie28,
+          lyric: "You shouldn't mess with me"
+        },
+        china_02: {
+          song: myBowie29,
+          lyric: "Oh baby, just you shut your mouth"
+        },
+        china_03: {
+          song: myBowie30,
+          lyric: "She says, ssssshhhhhhhhh"
+        },
+        heroes_01: {
+          song: myBowie31,
+          lyric: "I wish you could swim"
+        },
+        heroes_02: {
+          song: myBowie32,
+          lyric: "Just for one day"
+        }
+
+      };
       document.getElementById('play').addEventListener('click', function () {
-        var randomBowie = Math.round(Math.random() * (32 - 1) + 1);
-        console.log(randomBowie)
-        bowieList[randomBowie].play();
+        var randomBowie = Math.round(Math.random() * (31 - 0));
+        console.log(randomBowie);
+        var songsArr = Object.keys(bowieList1);
+        bowieList1[songsArr[randomBowie]].song.play();
+        // function randomBowieSong() {
+        //   return bowieList1[songsArr[randomBowie]];
+        // }
+        //
+        // return {
+        //   randomBowieSong: randomBowieSong
+        // }
+        // console.log("ENTIRE CHUNK", bowieList1[songsArr[randomBowie]]);
+        console.log(bowieList1[songsArr[randomBowie]].lyric);
+        // also show corresponding lyrics
+            // & stops the CSS shake
+        // another click stops the current song
+            //then repeats above process
+
       });
 
-  }
-};
+    }
+
+
+  // }());

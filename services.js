@@ -3,7 +3,7 @@
   angular
     .module('bowieApp')
     .factory('lyricService', function() {
-      
+
     })
 
 }());
