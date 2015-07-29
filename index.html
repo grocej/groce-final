@@ -9,9 +9,14 @@
 <body> <!--ng-app="bowieApp"-->
     <section class="wrapper">
       <div class="title-bar">Magic <span class="eight">8</span> Bowie</div>
-        <p class="subtitle">ask the Thin White Duke anything<br/ > and click below to see what he says</p>
-      <div class="shake freez shake-crazy"><button type="button" ng-click="samplePlayer" ng-class="bowie-lyrics" ng-controller="songTextController" id="play">
-         <li> {{ lyric }} </li><img src="images/face.png"/></button></div>
+        <!--<p class="subtitle">ask the Thin White Duke anything<br/ > and click below to see what he says</p>-->
+      <div class="shake freez shake-crazy">
+        <button type="button" ng-click="samplePlayer" ng-class="bowie-lyrics" ng-controller="songTextController" id="play">
+         <div class="left edge"></div>
+           <li class="lyric-container">{{ lyric }}</li>
+          <img src="images/face.png"/>
+        <div class="right edge"></div>
+      </button></div>
 
          <!--<div class="bannerContain">
            <div class="banner">
@@ -51,10 +56,16 @@
 
 
 </body>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript"></script>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 
 <script type="text/javascript" src="sampleLoader.js"></script>
+
+<script type="text/javascript">
+
+</script>
 
 
 

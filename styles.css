@@ -5,6 +5,7 @@ body {
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;
+  background-attachment: fixed;
 
 }
 @font-face {
@@ -14,6 +15,10 @@ body {
 @font-face {
     font-family: Belladona;
     src: local(Belladona), url('fonts/Belladona.otf') format('opentype');
+}
+
+.lyric-container {
+  shape-inside: polygon();
 }
 /*.bannerContain {
     width: 80%;
@@ -41,7 +46,7 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
     font-weight: bold;
     font-size: 2em;
     list-style-type: none;
-    position: relative;
+    position: absolute;
 }
 .wrapper {
   display: flex;

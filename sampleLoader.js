@@ -217,6 +217,7 @@
         console.log(randomBowie);
         var songsArr = Object.keys(bowieList1);
         bowieList1[songsArr[randomBowie]].song.play();
+        console.log(bowieList1[songsArr[randomBowie]].lyric);
         // function randomBowieSong() {
         //   return bowieList1[songsArr[randomBowie]];
         // }
@@ -225,7 +226,7 @@
         //   randomBowieSong: randomBowieSong
         // }
         // console.log("ENTIRE CHUNK", bowieList1[songsArr[randomBowie]]);
-        console.log(bowieList1[songsArr[randomBowie]].lyric);
+
         // also show corresponding lyrics
             // & stops the CSS shake
         // another click stops the current song
