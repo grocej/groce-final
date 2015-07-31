@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="bowieApp">
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css" charset="utf-8">
   <title>Magic 8 Bowie</title>
-  <script type="text/javascript" src="bower_components/blip/blip.js"></script>
 </head>
 <body> <!--ng-app="bowieApp"-->
-    <section class="wrapper">
+    <section class="wrapper" ng-controller="SongController">
       <div class="title-bar">Magic <span class="eight">8</span> Bowie</div>
         <!--<p class="subtitle">ask the Thin White Duke anything<br/ > and click below to see what he says</p>-->
       <div class="shake freez shake-crazy">
-        <button type="button" ng-click="samplePlayer" ng-class="bowie-lyrics" ng-controller="songTextController" id="play">
+        <button type="button" ng-click="samplePlayer()" id="play">
             <div class="trapezoid-container">
                <div class="content">
-                 <p class="lyric-container"></p>
+                 <p class="lyric-container">{{ samplePlayer.lyric }}</p>
                </div>
             </div>
           <img src="images/face-v2.png"/>
@@ -27,13 +26,16 @@
 
 </body>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript" src="bower_components/blip/blip.js"></script>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 
 <script type="text/javascript" src="sampleLoader.js"></script>
 
 <script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="services.js"></script>
+
 
 
 
