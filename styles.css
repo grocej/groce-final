@@ -61,6 +61,8 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
 .lyric-container {
     /*position: absolute;*/
     text-align: center;
+    color: white;
+    font-style: Helvetica, Arial, sans-serif;
     font-size: .75em;
     padding-top: 155px;
     padding-left: 35px;

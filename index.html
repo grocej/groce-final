@@ -6,19 +6,18 @@
   <title>Magic 8 Bowie</title>
 </head>
 <body> <!--ng-app="bowieApp"-->
-    <section class="wrapper" ng-controller="SongController">
+    <section class="wrapper">
       <div class="title-bar">Magic <span class="eight">8</span> Bowie</div>
         <!--<p class="subtitle">ask the Thin White Duke anything<br/ > and click below to see what he says</p>-->
-      <div class="shake freez shake-crazy">
+      <div class="shake freez shake-crazy" ng-controller="SongController">
         <button type="button" ng-click="samplePlayer()" id="play">
-            <div class="trapezoid-container">
-               <div class="content">
-                 <p class="lyric-container">{{ samplePlayer.lyric }}</p>
-               </div>
-            </div>
-          <img src="images/face-v2.png"/>
-        </button>
-      </div>
+          <!--  <div class="trapezoid-container">
+               <div class="content"> -->
+                 <p class="lyric-container">{{ lyric }}</p>
+            <!--   </div> -->
+                <img src="images/face-v2.png"/>
+        </div>
+      </button>
     </section>
 
 <ng-view></ng-view>

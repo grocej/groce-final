@@ -5,8 +5,12 @@
     .controller('SongController', function ($scope, SongService) {
 
           $scope.samplePlayer = function() {
-            SongService.getSong()
-            
+            SongService.getSong().then(function(songObject) {
+              console.log(songObject);
+              $scope.lyric = songObject.lyric;
+              console.log(songObject.lyric);
+              songObject.song.play();
+            })
           }
       });
 

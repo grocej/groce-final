@@ -2,9 +2,10 @@
   'use strict';
   angular
     .module('bowieApp')
-    .factory('SongService', function() {
+    .factory('SongService', function($q) {
 
       var getSong = function (callback) {
+        var defer = $q.defer();
           blip.sampleLoader()
             .samples({
               'kook_01': 'sounds/kook_01.mp3',
@@ -44,8 +45,6 @@
             .load();
 
         function callback() {
-            console.log("loading", blip.sampleLoader().samples);
-            // blip.sample('kook_02') // is an AudioBuffer
             var myBowie1 = blip.clip().sample('kook_01');
             var myBowie2 = blip.clip().sample('andy_01');
             var myBowie3 = blip.clip().sample('bitch_01');
@@ -210,12 +209,15 @@
               }
 
             };
+
             var randomBowie = Math.round(Math.random() * (31 - 0));
             console.log(randomBowie);
             var songsArr = Object.keys(bowieList1);
             console.log(bowieList1[songsArr[randomBowie]].lyric);
-            return bowieList1[songsArr[randomBowie]].song.play();
-        };
+            defer.resolve(bowieList1[songsArr[randomBowie]]);
+
+        }
+        return defer.promise
       }
 
       return {
