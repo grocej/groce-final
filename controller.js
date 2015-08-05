@@ -10,6 +10,7 @@
               $scope.lyric = songObject.lyric;
               console.log(songObject.lyric);
               songObject.song.play();
+              
             })
           }
       });

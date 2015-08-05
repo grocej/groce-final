@@ -9,18 +9,18 @@
     <section class="wrapper">
       <div class="title-bar">Magic <span class="eight">8</span> Bowie</div>
         <!--<p class="subtitle">ask the Thin White Duke anything<br/ > and click below to see what he says</p>-->
-      <div class="shake freez shake-crazy" ng-controller="SongController">
-        <button type="button" ng-click="samplePlayer()" id="play">
-          <!--  <div class="trapezoid-container">
-               <div class="content"> -->
-                 <p class="lyric-container">{{ lyric }}</p>
-            <!--   </div> -->
-                <img src="images/face-v2.png"/>
-        </div>
-      </button>
+    <!--    <input type="textarea" placeholder="Ask the Thin White Duke anything" class="speech-box"> -->
+         <div class="shake freez shake-crazy" ng-controller="SongController">
+             <div class="trapezoid-container" ng-click="samplePlayer()">
+                <!-- <img src="images/face-v2.png" ng-click="samplePlayer()"/> -->
+                 <p class="lyric-container" >{{ lyric }}</p>
+            </div>
+          </div>
+      <p class="subtitle"> Ask the Thin White Duke anything<br />and click for his answer</p>
     </section>
 
 <ng-view></ng-view>
+
 
 
 </body>

@@ -197,7 +197,7 @@
               },
               china_03: {
                 song: myBowie30,
-                lyric: "She says, ssssshhhhhhhhh"
+                lyric: "She says, ssssshhhhh"
               },
               heroes_01: {
                 song: myBowie31,
